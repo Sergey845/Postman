@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "cb1627f2-0fe1-4c18-8196-9302744cca8a",
+		"name": "Портал администратора",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Получение списка",
+			"item": [
+				{
+					"name": "Получение списка тортов",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://buy-cakes.herokuapp.com/api/cakes",
+							"protocol": "https",
+							"host": [
+								"buy-cakes",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"cakes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Добавление торта",
+			"item": [
+				{
+					"name": "Добавления торта for who",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"The Afrika\", \r\n    \"photoFileName\": \"\", \r\n    \"description\": \"Превосходный\",\r\n    \"forWhoId\": 0, \r\n    \"occasionId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://buy-cakes.herokuapp.com/api/forWho",
+							"protocol": "https",
+							"host": [
+								"buy-cakes",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"forWho"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавления торта for add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"The Afrika\", \r\n    \"photoFileName\": \"\", \r\n    \"description\": \"Превосходный\",\r\n    \"forWhoId\": 0, \r\n    \"occasionId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://buy-cakes.herokuapp.com/api/cakes/add",
+							"protocol": "https",
+							"host": [
+								"buy-cakes",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"cakes",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавления торта for add проверка",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"The Afrika\", \r\n    \"photoFileName\": \"\", \r\n    \"description\": \"Превосходный\",\r\n    \"forWhoId\": 0, \r\n    \"occasionId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://buy-cakes.herokuapp.com/api/cakes/21071\n",
+							"protocol": "https",
+							"host": [
+								"buy-cakes",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"cakes",
+								"21071\n"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Удаление торта",
+			"item": [
+				{
+					"name": "Получение списка тортов",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://buy-cakes.herokuapp.com/api/cakes",
+							"protocol": "https",
+							"host": [
+								"buy-cakes",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"cakes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удаление торта",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"The Afrika\", \r\n    \"photoFileName\": \"\", \r\n    \"description\": \"Превосходный\",\r\n    \"forWhoId\": 0, \r\n    \"occasionId\": 0\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://buy-cakes.herokuapp.com/api/cakes/21026",
+							"protocol": "https",
+							"host": [
+								"buy-cakes",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"cakes",
+								"21026"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка на удаления торта",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://buy-cakes.herokuapp.com/api/cakes",
+							"protocol": "https",
+							"host": [
+								"buy-cakes",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"cakes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Задание с переменной",
+			"item": [
+				{
+					"name": "Получение списка тортов  base Url",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/cakes",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"cakes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавления торта for who base Url",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"The Afrika\", \r\n    \"photoFileName\": \"\", \r\n    \"description\": \"Превосходный\",\r\n    \"forWhoId\": 0, \r\n    \"occasionId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/forWho",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"forWho"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавления торта for add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": {{newName}}, \r\n    \"photoFileName\": \"\", \r\n    \"description\": \"Превосходный\",\r\n    \"forWhoId\": 0, \r\n    \"occasionId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/cakes/add",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"cakes",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение списка тортов  base Url Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/cakes",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"cakes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://buy-cakes.herokuapp.com/"
+		},
+		{
+			"key": "newName",
+			"value": "The Afrika nomber five",
+			"type": "string"
+		}
+	]
+}

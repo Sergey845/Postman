@@ -1,0 +1,142 @@
+{
+	"id": "6608f644-059d-4d75-907e-2162586d9561",
+	"name": "Диплом",
+	"timestamp": "2022-08-04T19:51:18.025Z",
+	"collection_id": "20356917-4cd804b9-d917-4118-b831-f32450279cf8",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a3e96894-d689-4a5d-b83c-7609f4c9c27b",
+			"name": "Запрос",
+			"url": "https://api-vimbox.skyeng.ru/api/v1/compilations/showcase",
+			"time": 4578,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4578
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "af33cf91-5efc-4df5-be72-22debdf9cf07",
+			"name": "Запрос без Token",
+			"url": "https://api-vimbox.skyeng.ru/api/v1/compilations/showcase",
+			"time": 43,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 401": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				43
+			],
+			"allTests": [
+				{
+					"Status code is 401": true
+				}
+			]
+		},
+		{
+			"id": "fff8f46e-b304-436a-9c11-d65d5a29c5a1",
+			"name": "Отправка запроса методом Post",
+			"url": "https://api-vimbox.skyeng.ru/api/v1/compilations/showcase",
+			"time": 32,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed"
+			},
+			"tests": {
+				"Status code is 405": true
+			},
+			"testPassFailCounts": {
+				"Status code is 405": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 405": true
+				}
+			]
+		},
+		{
+			"id": "3e647b7c-540c-49a0-bdd9-bd21d9f40a86",
+			"name": "Отправка запроса методом Delete",
+			"url": "https://api-vimbox.skyeng.ru/api/v1/compilations/showcase",
+			"time": 42,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed"
+			},
+			"tests": {
+				"Status code is 405": true
+			},
+			"testPassFailCounts": {
+				"Status code is 405": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				42
+			],
+			"allTests": [
+				{
+					"Status code is 405": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4695,
+	"collection": {
+		"requests": [
+			{
+				"id": "a3e96894-d689-4a5d-b83c-7609f4c9c27b",
+				"method": "GET"
+			},
+			{
+				"id": "af33cf91-5efc-4df5-be72-22debdf9cf07",
+				"method": "GET"
+			},
+			{
+				"id": "fff8f46e-b304-436a-9c11-d65d5a29c5a1",
+				"method": "POST"
+			},
+			{
+				"id": "3e647b7c-540c-49a0-bdd9-bd21d9f40a86",
+				"method": "DELETE"
+			}
+		]
+	}
+}
